@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>手机端页面模板</title>
+	<link rel="stylesheet" type="text/css" href="css/mobile-reset.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script>
+		var iScale=1/window.devicePixelRatio;
+		document.write('<meta name="viewport" content="width=device-width,initial-scale='+iScale+',minimum-scale='+iScale+',maximum-scale='+iScale+',user-scalable=no"/>');
+		var iWidth=document.documentElement.clientWidth;
+		document.getElementsByTagName('html')[0].style.fontSize=iWidth/54+'px';
+	</script>
+</head>
+<body>
+<div class="top-box">
+	<div class="search-box clear">
+		<div class="left">
+			<b></b>
+		</div>
+		
+		<a href="javascript:;" class="search">小米Max 2</a>
+		<a href="javascript:;" class="new-info"><i>3</i></a>
+	</div>
+	<ul class="nav clear">
+		<li><a href="javascript:;" class="active">推荐</a></li>
+		<li><a href="javascript:;">手机</a></li>
+		<li><a href="javascript:;">智能</a></li>
+		<li><a href="javascript:;">电视</a></li>
+		<li><a href="javascript:;">电脑</a></li>
+		<li><a href="javascript:;">生活周边</a></li>
+	</ul>
+</div>
+<div class="scan">
+	<ul>
+		<li>扫一扫</li>
+		<li>我的二维码</li>
+	</ul>
+	<b></b>
+</div>
+</body>
+</html>

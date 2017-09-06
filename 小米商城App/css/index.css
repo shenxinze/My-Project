@@ -1,0 +1,111 @@
+.top-box {
+  width: 54rem;
+  height: 11.3rem;
+  background: #f5f5f5;
+  box-sizing: border-box;
+  padding-top: 1.2rem;
+}
+.top-box .search-box {
+  height: 4.8rem;
+  position: relative;
+}
+.top-box .search-box .left {
+  float: left;
+  width: 6.35rem;
+  height: 4.8rem;
+  background: url(../images/scan.jpg) no-repeat;
+  background-size: 6.35rem 4.8rem;
+}
+.top-box .search-box .search {
+  float: left;
+  width: 40.55rem;
+  height: 4.7rem;
+  border: 1px solid #d7d7d7;
+  border-radius: 0.3rem;
+  background: url(../images/search.jpg) no-repeat 2rem 1.3rem #fdfdfd;
+  background-size: 2.05rem 2.05rem;
+  font-size: 1.9rem;
+  color: #9a9a9a;
+  line-height: 4.7rem;
+  text-indent: 6.2rem;
+  margin-left: 0.55rem;
+}
+.top-box .search-box .new-info {
+  float: right;
+  width: 6rem;
+  height: 4.8rem;
+  background: url(../images/newinfo.jpg) no-repeat;
+  background-size: 6rem 4.8rem;
+  position: relative;
+}
+.top-box .search-box .new-info i {
+  width: 1.8rem;
+  height: 1.8rem;
+  background: #ff6b00;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  text-align: center;
+  color: #fff;
+  display: none;
+}
+.top-box .nav {
+  width: 100%;
+  height: 4.4rem;
+  margin-top: 0.9rem;
+}
+.top-box .nav li {
+  float: left;
+  width: 16.66666666%;
+  height: 4.4rem;
+  text-align: center;
+}
+.top-box .nav li a {
+  display: inline-block;
+  padding: 0 0.6rem;
+  font-size: 1.9rem;
+  color: #999999;
+  line-height: 4.1rem;
+  border-bottom: 0.3rem solid transparent;
+}
+.top-box .nav li .active {
+  border-bottom-color: #ff4a00;
+  color: #ff4a00;
+}
+.scan {
+  width: 18.3rem;
+  height: 11.8rem;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0.9rem;
+  top: 6.7rem;
+  padding: 0.5rem 0.35rem 0;
+  border-radius: 0.4rem;
+  display: none;
+}
+.scan li {
+  height: 5.7rem;
+  line-height: 5.7rem;
+  background: url(../images/search-small.png) no-repeat 1.8rem 1.8rem;
+  background-size: 2.4rem 2.4rem;
+  text-indent: 6.8rem;
+  font-size: 1.8rem;
+  color: #fff;
+  border-bottom: 1px solid #000;
+}
+.scan li:nth-child(2) {
+  border-bottom: none;
+}
+.scan b {
+  position: absolute;
+  width: 1.2rem;
+  height: 0.6rem;
+  background: url(../images/arrow.jpg) no-repeat;
+  background-size: 1.2rem 0.6rem;
+  top: -0.6rem;
+  left: 2rem;
+}
