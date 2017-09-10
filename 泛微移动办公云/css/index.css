@@ -1,0 +1,881 @@
+/*
+* @Author: shen
+* @Date:   2017-09-10 11:11:19
+* @Last Modified by:   shen
+* @Last Modified time: 2017-09-10 23:22:52
+*/
+body,p,h1,h2,h3,h4,h5,h6,dl,dd,form,input,form,select{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: 'PingFangSC-Light','Hiragino Sans GB',Microsoft YaHei Light,Microsoft YaHei,Arial,sans-serif;
+}
+ol,ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	zoom: 1;
+}
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+img{
+	border: none;
+	vertical-align: top;
+}
+th,td{
+	padding: 0;
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+textarea{
+	margin: 0;
+	padding: 0;
+	resize: none;
+	overflow: hidden;
+}
+i,em{
+	font-style: normal;
+}
+b,strong{
+	font-weight: normal;
+}
+/* 默认样式重置（css reset）*/
+body{
+	background: #f5f5f5;
+}
+.graph{
+	background-image: url(../images/eteams_icons.png);
+	background-repeat: no-repeat;
+}
+/*-------------------------- header --------------------------*/
+#header{
+	width: 100%;
+	height: 50px;
+	background: #2dc3e8;
+}
+#header .user-box{
+	float: left;
+	width: 222px;
+    padding: 0 15px 0 10px;
+    height: 100%;
+    position: relative;
+    -webkit-transition: background-color .2s linear;
+    -o-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+}
+#header .user-box .user-img {
+    margin: 5px 9px 0 0;
+    border-radius: 50%;
+    float: left;
+}
+#header .user-box .user-img img{
+    width: 38px;
+    height: 38px;
+    border: 1px solid #fff;
+	border-radius: 50%;
+}
+#header .user-box .user-name-box{
+	float: left;
+	height: 50px;
+}
+#header .user-box .user-name-box .user-name{
+	float: left;
+	max-width: 60px;
+	line-height: 50px;
+	font-size: 14px;
+    color: #fff;
+}
+#header .basic-nav{
+	float: left;
+}
+#header .basic-nav .list{
+
+}
+#header .basic-nav .list li{
+	float: left;
+}    
+
+#header .basic-nav .list a {
+	display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 16px;
+    text-align: center;
+}
+#header .basic-nav .list .active,#header .basic-nav .list li a:hover{
+	background-color: #02aed9;
+}
+#header .basic-nav .list span{
+	display: inline-block;
+	margin-left: 8px; 
+    white-space: nowrap;
+}
+#header .basic-nav .list li:nth-last-child(1) span{
+	margin-left: 0;
+}
+#header .basic-nav .graph{
+	height: 16px;
+    width: 16px;
+    margin-top: -3px;
+    display: inline-block;
+    vertical-align: middle;  
+}
+#header .basic-nav .list .graph-home{
+	background-position: 0 0; 
+}
+#header .basic-nav .list .graph-task{
+	background-position: -32px 0; 
+}
+#header .basic-nav .list .graph-flow{
+	background-position: -96px 0; 
+}
+#header .basic-nav .list .graph-down{
+	display: inline-block;
+	vertical-align: top;
+	width: 12px;
+	height: 12px;
+	background: url(../images/arrow1.png) no-repeat;
+	margin: 20px 0 0 12px;
+}
+#header .basic-nav .list li .more:hover i{
+	background: url(../images/arrow.png) no-repeat;
+}
+#header .basic-nav .list li:nth-child(1){
+	position: relative;
+}
+#header .basic-nav .list li:nth-child(1) b{
+	padding: 2px 2px;
+    border-radius: 7px;
+    background: #f94521;
+    color: #fff;
+    line-height: 1;
+    min-width: 12px;
+    position: absolute;
+    top: 10px;
+    right: 2px;
+    font-size: 12px;
+}
+#header .basic-nav .list li:nth-last-child(1){
+	position: relative;
+}
+#header .basic-nav .list li:nth-last-child(1) a:hover{
+	background: #fff;
+	color: #48484e;
+}
+#header .basic-nav .drop-menu{
+	position: absolute;
+	left: 0px;
+	top: 50px;
+	width: 184px;
+	background: #fff;
+	padding: 5px 0;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	display: none;
+}
+#header .basic-nav .drop-menu li{
+	width: 100%;
+}
+#header .basic-nav .drop-menu .line{
+	height: 1px;
+    margin: 9px 0;
+    background-color: #e5e5e5;
+}
+#header .basic-nav .drop-menu a{
+	height: 30px;
+	display: block;
+	line-height: 30px;
+    font-size: 14px;
+    color: #333;
+    white-space: nowrap;
+    text-align: left;
+    position: relative;
+}
+#header .basic-nav .drop-menu a:hover{
+	color: #fff;
+}
+#header .basic-nav .drop-menu li:nth-last-child(1) a:hover{
+	background-color: #02aed9;
+	color: #fff;
+}
+
+#header .basic-nav .drop-menu span{
+	height: 30px;
+	line-height: 30px;
+	margin-left: 8px !important;
+}
+#header .basic-nav .drop-menu b{
+    display: inline-block;
+    min-width: 10px;
+    padding: 2px 5px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #777!important;
+    border-radius: 10px;
+    margin-right: 16px;
+    margin-top: -2px;
+}
+#header .basic-nav .drop-menu .graph{
+    height: 16px;
+    width: 16px;
+}
+#header .basic-nav .drop-menu .graph1{
+	background-position: 0 -334px;
+}
+#header .basic-nav .drop-menu .graph2{
+	background-position: -48px -334px;
+}
+#header .basic-nav .drop-menu .graph3{
+	background-position: -64px -334px;
+}
+#header .basic-nav .drop-menu .graph4{
+	background-position: -80px -334px;
+}
+#header .basic-nav .drop-menu .graph5{
+    background-position: -144px -334px;
+}
+#header .basic-nav .drop-menu .graph6{
+    background-position: -32px -334px;
+}
+#header .basic-nav .drop-menu .graph7{
+    background-position: -112px -334px;
+}
+#header .basic-nav .drop-menu .graph8{
+    background-position: -16px -334px;
+}
+#header .basic-nav .drop-menu .graph9{
+    background-position: -128px -334px;
+}
+#header .basic-nav .drop-menu .graph10{
+    background-position: -96px -334px;
+}
+
+#header .basic-nav .drop-menu a:hover .graph1{
+	background-position:0 -350px;
+}
+#header .basic-nav .drop-menu a:hover .graph2{
+	background-position:-48px -350px;
+}
+#header .basic-nav .drop-menu a:hover .graph3{
+	background-position:-64px -350px;
+}
+#header .basic-nav .drop-menu a:hover .graph4{
+	background-position:-80px -350px;
+}
+#header .basic-nav .drop-menu a:hover .graph5{
+	background-position: -144px -350px;
+}
+#header .basic-nav .drop-menu a:hover .graph6{
+	background-position:-32px -350px;
+}
+#header .basic-nav .drop-menu a:hover .graph7{
+	background-position:-112px -350px;
+}
+#header .basic-nav .drop-menu a:hover .graph8{
+	background-position:-16px -350px;
+}
+#header .basic-nav .drop-menu a:hover .graph9{
+	background-position:-128px -350px;
+}
+#header .basic-nav .drop-menu a:hover .graph10{
+	background-position: -96px -350px;
+}
+
+#header .basic-nav .list-box{
+	width: 608px;
+	height: auto;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	top: 50px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    white-space: nowrap;
+    box-sizing: border-box;
+    display: none;
+}
+#header .basic-nav .list-box .top-box{
+	padding: 16px 0 8px 20px;
+}
+#header .basic-nav .list-box .list-box-sm{
+	float: left;
+	width: 166px;
+	margin-right: 35px;
+}
+#header .basic-nav .list-box .list-box-sm:nth-last-child(1){
+	margin-right: 0;
+}
+#header .basic-nav .list-box dl{
+	width: 166px;
+	border-bottom: 1px solid #f1f1f1;
+	padding-bottom: 12px;
+	margin-bottom: 20px;
+}
+
+#header .basic-nav .list-box .list-box-sm dl:nth-last-child(1){
+	border-bottom: none;
+	margin-bottom: 0;
+}
+#header .basic-nav .list-box dt{
+	font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 10px;
+    margin-bottom: 14px;
+}
+#header .basic-nav .list-box dd{
+	
+}
+#header .basic-nav .list-box dd a{
+    display: block;
+    height: 27px;
+    line-height: 27px;
+    color: #666;
+    padding: 0 10px;
+    margin-bottom: 6px;
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: 14px;
+    text-align: left;
+}
+#header .basic-nav .list-box dl dd a:nth-last-child(1){
+	margin-bottom: 0;
+}
+#header .basic-nav .list-box dl dd a:hover{
+	color: #323232;
+    background: #f3f3f3!important;
+    border-radius: 1px;
+}
+#header .basic-nav .list-box dd span{
+	padding-left: 14px;
+}
+#header .basic-nav .list-box .graph-blog{
+	background-position: -16px -16px;
+}
+#header .basic-nav .list-box .graph-report{
+	background-position: -128px -16px;
+}
+#header .basic-nav .list-box .graph-saleTarget{
+	background-position: -240px -48px;
+}
+#header .basic-nav .list-box .graph-crmMarketactivity{
+	background-position: -272px -16px;
+}
+#header .basic-nav .list-box .graph-clue{
+	background-position: -338px -47px;
+}
+#header .basic-nav .list-box .graph-crm{
+    background-position: -80px -16px;
+}
+#header .basic-nav .list-box .graph-contact{
+	background-position: -208px -16px;
+}
+#header .basic-nav .list-box .graph-salechance{
+	background-position: -304px -16px;
+}
+#header .basic-nav .list-box .graph-contract{
+	background-position: -320px -50px;
+}
+#header .basic-nav .list-box .graph-production{
+    background-position: -320px -16px;
+}
+#header .basic-nav .list-box .graph-competitor{
+    background-position: -336px -16px;
+}
+#header .basic-nav .list-box .graph-crmSummary{
+    background-position: -302px -50px;
+}
+#header .basic-nav .list-box .graph-goal{
+    background-position: -48px -16px;
+}
+#header .basic-nav .list-box .graph-task{
+    background-position: -32px -16px;
+}
+#header .basic-nav .list-box .graph-agenda{
+    background-position: -112px -16px;
+}
+#header .basic-nav .list-box .graph-doc{
+    background-position: -64px -16px;
+}
+#header .basic-nav .list-box .graph-flow{
+	background-position: -96px -16px;
+}
+#header .basic-nav .list-box .graph-doc{
+    background-position: -64px -16px;
+}
+#header .basic-nav .list-box .graph-formstat{
+	background-position: -192px -16px;
+}
+#header .basic-nav .list-box .graph-kpi{
+    background-position: -224px -48px;
+}
+#header .basic-nav .list-box .graph-hr{
+	background-position: -208px -48px;
+}
+#header .basic-nav .list-box .graph-attend{
+	background-position: -176px -16px;
+}
+#header .basic-nav .list-box .graph-salarybill{
+	background-position: -256px -48px;
+}
+#header .basic-nav .list-box .graph-stat{
+	background-position: -144px -16px;
+}
+#header .basic-nav .list-box .graph-sms{
+    background-position: -272px -48px;
+}
+#header .basic-nav .list-box .graph-email{
+	background-position: -192px -47px;
+}
+#header .basic-nav .list-box .graph-enterprise{
+	background-position: -160px -16px;
+}
+#header .basic-nav .list-box .graph-wechatservice{
+	background-position: -288px -16px;
+}
+
+#header .basic-nav .list-box .menu-box{
+	height: 35px;
+	border-top: 1px solid #d5d5d5;
+}
+#header .basic-nav .list-box .menu-box a{
+	float: left;
+    color: #666;
+    width: 50%;
+    font-size: 14px;
+    padding: 0;
+}
+#header .basic-nav .list-box .menu-box .active,#header .basic-nav .list-box .menu-box a:hover{
+	background: #f1f1f1!important;
+    color: #333!important;
+}
+#header .basic-nav .list-box .menu-box i{
+	display: inline-block;
+	vertical-align: top;
+	width: 12px;
+	height: 12px;
+	margin: 19px 10px 0 0;
+}
+#header .basic-nav .list-box .menu-box a:nth-child(1) i{
+	background: url(../images/set.jpg) no-repeat;
+}
+#header .basic-nav .list-box .menu-box a:nth-child(2) i{
+	background: url(../images/add.jpg) no-repeat;
+}
+
+#header .quick-menu{
+	float: right;
+	width: 248px;
+}
+#header .quick-menu .right-menu{
+	width: 248px;
+	height: 50px;
+}
+#header .quick-menu li{
+	float: left;
+	margin-right: 6px;
+}
+#header .quick-menu li a{
+	display: block;
+	padding: 0 12px;
+    color: #fff;
+    line-height: 50px;
+    height: 50px;
+}
+#header .quick-menu li a i{
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	line-height: 50px;
+}
+#header .quick-menu .search{
+	width: 44px;
+	height: 30px;
+	position: relative;
+	cursor: pointer;
+}
+#header .quick-menu .search .search-img{
+	width: 14px;
+	height: 13px;
+	background: url(../images/search.png) no-repeat;
+	-margin: 20px auto 0;
+	position: absolute;
+	left: 16px;
+	top: 20px;
+	z-index: 10;
+}
+#header .quick-menu input{
+	position: absolute;
+    right: 4px;
+    top: 12px;
+    width: 0px;
+    height: 30px;
+    border-radius: 15px;
+    line-height: 20px;
+    color: #fff;
+    padding: 0;
+    background-color: #1aaed2;
+    opacity: 0;
+    border: 0;
+    font-size: 12px;
+    text-indent: 10px;
+    outline: none;
+    z-index: 1;
+    transition: 0.4s;
+}
+#header .quick-menu .search:hover input{
+	width: 170px;
+	opacity: 1;
+}
+#header .quick-menu .quick-menu-add{
+	width: 40px;
+	height: 50px;
+	position: relative;
+}
+#header .quick-menu .quick-menu-add a:hover{
+	background-color: #fff;
+}
+#header .quick-menu .quick-menu-add a:hover .graph-plus{
+	background-position:0 -48px;
+}
+#header .quick-menu .quick-menu-add .graph-plus{
+	background-position: 0 -32px;
+}
+#header .quick-menu .quick-menu-add .list{
+	width: 154px;
+	background: #fff;
+	position: absolute;
+	right: 0;
+	top: 50px;
+	padding: 5px 0;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	display: none;
+}
+#header .quick-menu .quick-menu-add .list li{
+	width: 154px;
+	height: 36px;
+	line-height: 36px;
+	margin: 0;
+}
+#header .quick-menu .quick-menu-add .list a{
+	display: block;
+	height: 36px;
+	line-height: 36px;
+	color: #333;
+	padding: 0;
+	position: relative;
+	padding-left: 50px;
+}
+#header .quick-menu .quick-menu-add .list a:hover{
+	background-color: #2dc3e8;
+	color: #fff;
+}
+
+#header .quick-menu .quick-menu-add .list i{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 20px;
+	top: 9px;
+}
+#header .quick-menu .quick-menu-add .graph-blog{
+	background-position: 0 -501px;
+}
+#header .quick-menu .quick-menu-add .list a:hover .graph-blog{
+	background-position:0 -521px;
+}
+#header .quick-menu .quick-menu-add .graph-task{
+	background-position: -20px -501px;
+}
+#header .quick-menu .quick-menu-add .list a:hover .graph-task{
+	background-position:-20px -521px;
+}
+#header .quick-menu .quick-menu-add .graph-agenda{
+	background-position: -140px -501px;
+}
+#header .quick-menu .quick-menu-add .list a:hover .graph-agenda{
+	background-position: -140px -521px;
+}
+#header .quick-menu .quick-menu-add .graph-doc{
+	background-position: -60px -501px;
+}
+#header .quick-menu .quick-menu-add .list a:hover .graph-doc{
+	background-position: -60px -521px;
+}
+#header .quick-menu .quick-menu-add .graph-flow{
+	background-position: -100px -501px;
+}
+#header .quick-menu .quick-menu-add .list a:hover .graph-flow{
+	background-position: -100px -521px;
+}
+#header .quick-menu .quick-menu-add .graph-goal{
+	background-position: -40px -501px;
+}
+#header .quick-menu .quick-menu-add .list a:hover .graph-goal{
+    background-position: -40px -521px;
+}
+#header .quick-menu .quick-menu-add .list .line{
+	width: 100%;
+	height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+#header .quick-menu .quick-menu-add .graph-crm{
+	background-position: -80px -501px;
+}
+#header .quick-menu .quick-menu-add .list a:hover .graph-crm{
+    background-position: -80px -521px;
+}
+#header .quick-menu .quick-menu-add .graph-linkman{
+	background-position: -120px -501px;
+}
+#header .quick-menu .quick-menu-add .list a:hover .graph-linkman{
+    background-position: -120px -521px;
+}
+#header .quick-menu .quick-menu-add .graph-record{
+	background-position: -220px -501px;
+}
+#header .quick-menu .quick-menu-add .list a:hover .graph-record{
+    background-position: -220px -521px;
+}
+
+#header .quick-menu .qq{
+	width: 40px;
+	height: 50px;
+}
+#header .quick-menu .qq .graph-qq{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	background-position: -128px -32px;
+}
+#header .quick-menu .qq a:hover{
+	background-color: #02aed9;
+}
+#header .quick-menu .qq dl{
+	width: 148px;
+	height: 102px;
+	background-color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 4px;
+	margin-left: -74px;
+	position: relative;
+	border: 1px solid #cfcfcf;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	display: none;
+}
+#header .quick-menu .qq dt{
+	font-size: 14px;
+	text-align: center;
+	font-weight: bold;
+	line-height: 40px;
+}
+#header .quick-menu .qq .qq-num{
+	text-align: center;
+}
+
+#header .quick-menu .qq .join a{
+	width: 124px;
+	height: 28px;
+	margin: 4px auto 0;
+	border: 1px solid #18aedb;
+	background: #23b7e5;
+	color: #fff;
+	text-align: center;
+	line-height: 28px;
+	padding: 0;
+}
+#header .quick-menu .qq .join a:hover{
+	background: #00c3ff;
+}
+#header .quick-menu .qq dd i{
+	width: 22px;
+	height: 11px;
+	background: url(../images/arrow-t.png) no-repeat;
+	position: absolute;
+	left: 63px;
+	top: -11px;
+}
+
+#header .quick-menu .quick-menu-list{
+	width: 100px;
+	height: 50px;
+	margin-right: 0;
+	position: relative;
+}
+#header .quick-menu .quick-menu-list .graph-eteams{
+	display: inline-block;
+	vertical-align: middle;
+	width: 63px;
+	height: 16px;
+	background-position: -49px -32px;
+}
+#header .quick-menu .quick-menu-list .icon-angle-down{
+	display: inline-block;
+	vertical-align: middle;
+	width: 10px;
+	height: 10px;
+	background: url(../images/arrow1.png) no-repeat;
+	background-size: 90%;
+	margin: 4px 0 0 2px;
+}
+#header .quick-menu .quick-menu-list a:hover{
+	background: #fff;
+}
+#header .quick-menu .quick-menu-list a:hover .graph-eteams{
+	background-position:-49px -48px;
+}
+#header .quick-menu .quick-menu-list a:hover .icon-angle-down{
+	width: 10px;
+	height: 10px;
+	background-image: url(../images/arrow.png);
+	margin-top: 2px;
+}
+
+#header .quick-menu .quick-menu-list .list{
+	width: 170px;
+	background: #fff;
+	position: absolute;
+	right: 0;
+	top: 50px;
+	padding: 5px 0;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	display: none;
+}
+#header .quick-menu .quick-menu-list .list li{
+	width: 170px;
+	height: 36px;
+	line-height: 36px;
+}
+#header .quick-menu .quick-menu-list .list a{
+	display: block;
+	width: 150px;
+	height: 36px;
+	line-height: 36px;
+	color: #333;
+	padding: 0 0 0 20px;
+}
+#header .quick-menu .quick-menu-list .list .line{
+	width: 100%;
+	height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+/*-------------------------- tip --------------------------*/
+.tip-box-user{
+	width: 758px;
+	height: 364px;
+	background: #ededed;
+	background: red;
+}
+.tip-box-user .left{
+	width: 166px;
+	background: #fff;
+	padding: 16px 0 0 0;
+	float: left;
+}
+.tip-box-user .left .img-user{
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	margin: 0 auto 24px;
+}
+.tip-box-user .left .img-user img{
+	width: 52px;
+	height: 52px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+}
+.tip-box-user .left .menu-list{
+	width: 120px;
+	margin: 0 auto;
+}
+.tip-box-user .left .menu-list a{
+	display: block;
+	width: 118px;
+	height: 28px;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	text-align: center;
+	line-height: 28px;
+	color: #969796;
+}
+.tip-box-user .left .menu-list a:hover{
+	background-color: #2dc1e6;
+    color: #fff;
+    border-color: #02aed9;
+}
+.tip-box-user .right{
+	float: left;
+}
+.tip-box-user .right .search-box{
+	height: 54px;
+}
+.tip-box-user .right .search-box span{
+	float: left;
+	line-height: 54px;
+	font-style: italic;
+	color: #979797;
+}.tip-box-user .right .search-box a{
+	float: left;
+	width: 156px;
+	height: 30px;
+	position: relative;
+	margin: 13px 0 0 78px;
+}
+.tip-box-user .right .search-box input{
+	border-radius: 3px;
+    vertical-align: middle;
+    height: 30px;
+    padding: 4px 10px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #555;
+    background-image: none;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	
+	box-sizing: border-box;
+}
+.tip-box-user .right .search-box a i{
+	width: 14px;
+	height: 14px;
+	background: url(../images/search-b.png) no-repeat;
+	position: absolute;
+	right: 8px;
+	top: 7px;
+}
+.tip-box-user .right .search-box a:hover i{
+	background-image: url(../images/search-blue.png);
+}
