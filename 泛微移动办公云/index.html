@@ -325,27 +325,157 @@
 		</ul>
 	</div>
 </div>
-<div class="tip-box-user clear">
-	<div class="left">
-		<div class="img-user">
-			<img src="images/avatar.png" alt="">
+<!-- main -->
+<div id="main" class="main">
+	<div class="wrap">
+		<div class="center">
+			<div class="center-cont">
+				1313
+			</div>
 		</div>
-		<div class="menu-list">
-			<a href="javascript:;">未完成事项</a>
-			<a href="javascript:;">关注事项</a>
-			<a href="javascript:;">标签</a>
-			<a href="javascript:;">个人设置</a>
+	</div>
+	<div class="left">
+		<div class="left-cont">
+			123
 		</div>
 	</div>
 	<div class="right">
-		<div class="search-box">
-			<span>在此您可以切换到关注的人或下属的工作空间</span>
-			<a href="javascript:;">
-				<input type="text" name="">
-				<i></i>
-			</a>
+		<div class="right-cont">
+			13
 		</div>
 	</div>
-</div>	
+</div>
+<!-- tip-user -->
+<div id="tip-box-user">
+	<div class="tip-box-user clear">
+		<div class="left">
+			<div class="img-user">
+				<img src="images/avatar.png" alt="">
+			</div>
+			<div class="menu-list">
+				<a href="javascript:;">未完成事项</a>
+				<a href="javascript:;">关注事项</a>
+				<a href="javascript:;">标签</a>
+				<a href="javascript:;">个人设置</a>
+			</div>
+		</div>
+		<div class="right">
+			<div class="search-box">
+				<span>在此您可以切换到关注的人或下属的工作空间</span>
+				<a href="javascript:;">
+					<input type="text" name="" placeholder="人员搜索">
+					<i></i>
+				</a>
+			</div>
+			<div class="tab-box">
+				<div class="top">
+					<a href="javascript:;" class="tab1 active">我关注的人</a>
+					<a href="javascript:;" class="tab2">团队成员</a>
+				</div>
+				<div class="top-bottom">
+					<div class="tab-cont1">
+						<div class="cont-default">
+							<p class="user clear">
+								<img src="images/avatar.png" >
+								<span>沈昕泽</span>
+							</p>
+							<p class="tip">团队成员只有您一人，<a href="javascript:;">邀请同事</a>加入协作吧！</p>
+						</div>
+					</div>
+					<div class="tab-cont2"></div>
+				</div>
+			</div>
+			<div class="btn">
+				<a href="javascript:;">团队成员设置</a>
+				<a href="javascript:;">邀请同事</a>
+			</div>
+		</div>
+	</div>	
+</div>
+<!-- tip-邀请 -->
+<div id="tip-invite-box">
+	<div class="invite">
+		<div class="header clear">
+			<p class="lr clear">
+				<span class="left">邀请同事加入</span>
+				<span class="right clear">
+					<a href="javascript:;"><strong><i></i>点击跳转帮助页面</strong></a>
+					<a href="javascript:;"><i></i><b>批量导入</b></a>
+				</span>
+			</p>
+			<p class="ri"><a href="javascript:;">×</a></p>
+		</div>
+		<div class="tip">提示：您可以通过手机号码或邮箱邀请同事加入到eteams；也可以点击复制链接，把链接直接发送给同事，邀请他们加入。</div>
+		<div class="partner-info">
+			<div class="info clear">
+				<label for="name1">
+					<span>姓名：</span>
+					<input type="text" name="" value="" placeholder="请输入姓名" id="name1">
+				</label>
+				<label for="phone1">
+					<span>联系方式：</span>
+					<input type="text" name="" value="" placeholder="请输入邀请邮箱或手机号码" id="phone1">
+				</label>
+			</div>
+			<div class="info clear">
+				<label for="name1">
+					<span>姓名：</span>
+					<input type="text" name="" value="" placeholder="请输入姓名" id="name1">
+				</label>
+				<label for="phone1">
+					<span>联系方式：</span>
+					<input type="text" name="" value="" placeholder="请输入邀请邮箱或手机号码" id="phone1">
+				</label>
+			</div>
+			<div class="info clear">
+				<label for="name1">
+					<span>姓名：</span>
+					<input type="text" name="" value="" placeholder="请输入姓名" id="name1">
+				</label>
+				<label for="phone1">
+					<span>联系方式：</span>
+					<input type="text" name="" value="" placeholder="请输入邀请邮箱或手机号码" id="phone1">
+				</label>
+			</div>
+			<div class="info clear">
+				<label for="name1">
+					<span>姓名：</span>
+					<input type="text" name="" value="" placeholder="请输入姓名" id="name1">
+				</label>
+				<label for="phone1">
+					<span>联系方式：</span>
+					<input type="text" name="" value="" placeholder="请输入邀请邮箱或手机号码" id="phone1">
+				</label>
+			</div>
+			<div class="info clear">
+				<label for="name1">
+					<span>姓名：</span>
+					<input type="text" name="" value="" placeholder="请输入姓名" id="name1">
+				</label>
+				<label for="phone1">
+					<span>联系方式：</span>
+					<input type="text" name="" value="" placeholder="请输入邀请邮箱或手机号码" id="phone1">
+				</label>
+			</div>
+			<div class="btn-box clear">
+				<a href="javascript:;" class="btn1">邀请</a>
+				<a href="javascript:;" class="btn2">下次再说</a>
+				<a href="javascript:;" class="btn3">清空</a>
+			</div>
+		</div>
+		<div class="line"></div>
+	</div>
+</div>
+<script>
+//自适应宽高
+var main = document.querySelector('#main');
+var head = document.querySelector('#header');
+function resize(){
+	var clientH = document.documentElement.clientHeight;
+	main.style.height = clientH - head.offsetHeight+'px';
+}
+window.onresize = resize;
+resize();
+</script>
 </body>
 </html>
