@@ -6,6 +6,9 @@ html{
 body{
     height: 100%;
     overflow: auto;
+    font-family: arial,"Microsoft Yahei",sans-serif;
+    box-sizing: border-box;
+    background: #f5f5f5;
 }
 body a{
     display: inline-block;
@@ -58,5 +61,222 @@ body a{
     }
     li:nth-child(5) i{
         background-image: url(../images/sort5.jpg);
+    }
+}
+.list-show{
+    width: 100%;
+    height: 528/@r;
+    border-top: 3px solid #f0f0f0;
+    li{
+        float: left;
+        width: 33.333333%;
+        height: 528/@r;
+        background: #fff;
+        a{
+            display: block;
+            height: 528/@r;
+            text-align: center;
+        }
+        strong{
+            display: block;
+            font-size: 40/@r;
+            color: #2dcb74;
+            margin: 40/@r 0;
+        }
+        b{
+            display: block;
+            font-size: 32/@r;
+            color: #888888;
+            margin-bottom: 45/@r;
+        }
+        span{
+            display: block;
+            -width: 216/@r;
+            height: 288/@r;
+            -box-shadow: 1px 2px 4px rgba(0,0,0,.3);
+            margin: 0 auto;
+        }
+        img{
+            display: block;
+            width: 216/@r;
+            height: 288/@r;
+            background: #eeece9;
+            margin: 0 auto;
+        }
+    }
+    li:nth-child(3){
+        float: right;
+    }
+    li:nth-child(2){
+        height: 528/@r;
+        border: 3px solid #f0f0f0;
+        border-bottom: none;
+        border-top: none;
+    } 
+}
+.top-line{
+    width: 100%;
+    height: 105/@r;
+    background: #f2f2f2;
+    -overflow: hidden;
+    .top-line-title{
+        float: left; 
+        width: 297/@r;
+        height: 105/@r;
+        background: url(../images/top-line.jpg) no-repeat 42/@r 33/@r;
+        background-size: 255/@r 39/@r;
+    }
+    ul{
+        float: left;
+        height: 105/@r;
+        li{
+            font-size: 38/@r;
+            color: #000;
+            line-height: 105/@r;
+            margin-left: 46/@r;
+        }
+    }
+}
+.top-line-list{
+    width: 100%;
+    min-height: 882/@r;
+    background: #f0f0f0;
+    ul{
+        li{
+            float: left;
+            width: 50%;
+            height: 294/@r;
+            border-bottom: 3px solid #f0f0f0;
+            padding-left: 36/@r;
+            padding-top: 24/@r;
+            background: #fff;
+            a{
+                height: 247/@r;
+                display: block;
+                dl{
+                    width: 100%;
+                    height: 246/@r;
+                }
+                dt{
+                    width: 171/@r;
+                    height: 246/@r;
+                    background: url(../images/img-def.jpg) no-repeat;
+                    background-size: 171/@r 246/@r;
+                    padding: 22/@r 10/@r;
+                    float: left;
+                }
+
+                img{
+                   width: 151/@r;
+                   height: 202/@r; 
+                }
+                dd{
+                    width: 326/@r;
+                    height: 246/@r;
+                    float: left;
+                    padding: 16/@r 44/@r 0 26/@r;
+                } 
+                h4{
+                    font-size: 34/@r;
+                    color: #000;
+                    display: block;
+                    line-height: 52/@r;
+                    margin-bottom: 6/@r;
+                }
+                p{
+                    display: block;
+                    font-size: 29/@r;
+                    color: #606060;
+                    line-height: 45/@r;
+                }
+            }
+        }
+        li:nth-child(2n-1){
+            border-right: 3px solid #f0f0f0;
+        }
+        li:nth-last-child(1){
+            border-bottom: none;
+        }
+        li:nth-last-child(2){
+            border-bottom: none;
+        }
+    }
+}
+.hot-list{
+    width: 100%;
+    margin-top: 30/@r;
+    ul{
+
+        li{
+            width: 100%;
+            height: 432/@r;
+            background: #fff;
+            margin-bottom: 3px;
+            padding-left: 36/@r;
+            padding-top: 23/@r;
+            a{
+                display: block;
+                dl{
+                   width: 1044/@r; 
+                }
+                dt{
+                    width: 279/@r;
+                    height: 390/@r;
+                    background: url(../images/img-def1.jpg) no-repeat;
+                    background-size: 279/@r 390/@r;
+                    padding: 22/@r 10/@r;
+                    float: left;
+                    img{
+                        width: 259/@r;
+                        height: 346/@r;
+                    }
+                }
+                dd{
+                    float: left;
+                    width: 765/@r;
+                    padding: 0 50/@r 0 26/@r;
+                    h4{
+                        font-size: 42/@r;
+                        color: #000;
+                        padding: 61/@r 0 38/@r 0;
+                    }
+                    p{
+                        font-size: 37/@r;
+                        color: #585858;
+                        line-height: 60/@r;
+                    }
+                    b{
+                        float: left;
+                        font-size: 32/@r;
+                        color: #606060;
+                    }
+                    strong{
+                        float: right;
+                    }
+                    span{
+                        float: left;
+                        height: 42/@r;
+                        padding: 0 13/@r;
+                        text-align: center;
+                        line-height: 42/@r;
+                        font-size: 27/@r;
+                        color: #8f8f8f;
+                        border: 1px solid #cdcdcd;
+                        border-radius: 10/@r;
+                    }
+                    span:nth-child(2){
+                        margin: 0 24/@r;
+                    }
+                    div{
+                        height: 42/@r;
+                        line-height: 42/@r;
+                        margin-top: 30/@r;
+                    }
+                }
+            }
+        }
+        li:nth-last-child(1){
+            margin-bottom: 0;
+        }
     }
 }

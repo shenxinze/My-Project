@@ -21,13 +21,12 @@ body {
 }
 body * {
 	-webkit-user-select:none;
-	font-family:  Helvetica;
+	font-family:  Helvetica,"微软雅黑","Microsoft Yahei",verdana;
 	box-sizing: border-box;
 }
 body,h1,h2,h3,h4,h5,h6,p,dl,dd{
 	margin: 0;
 	font-size: 0.6rem;
-	font-family: "Microsoft Yahei","微软雅黑",verdana;
 	font-weight: normal;
 	line-height: 1;
 }
