@@ -17,11 +17,54 @@ body a{
 .wrap-slide{
     width: 100%;
     height: 600/@r;
+    position: relative;
     li{
         height: 600/@r;
         img{
             width: 100%;
             height: 100%;
+        }
+    }
+}
+.nav{
+     width: 100%; 
+    height: 144/@r;
+    padding: 34/@r 88/@r 0 66/@r;
+    position: absolute;
+    left: 0/@r;
+    top: 34/@r;
+    display: none;
+    ul{
+        float: left;
+        li{
+            float: left;
+            margin-right: 94/@r;
+            a{
+                display: block;
+                padding: 0 2px;
+                font-size: 38/@r;
+                line-height: 58/@r;
+                color: #888;
+            }
+        }
+        .active{
+            color: #ff9f39;
+            border-bottom: 6px solid #ff9f39;
+            border-radius: 2px 2px;
+        }
+
+    }
+    .search{
+        float: right;
+        width: 42/@r;
+        height: 42/@r;
+        a{
+            display: block;
+            width: 42/@r;
+            height: 42/@r;
+            background: url(../images/search.png) no-repeat;
+            background-size: 42/@r 42/@r;
+            margin-top: 10/@r;
         }
     }
 }
@@ -214,6 +257,7 @@ body a{
             margin-bottom: 3px;
             padding-left: 36/@r;
             padding-top: 23/@r;
+            position: relative;
             a{
                 display: block;
                 dl{
@@ -278,5 +322,72 @@ body a{
         li:nth-last-child(1){
             margin-bottom: 0;
         }
+        .tag{
+            width: 99/@r;
+            height: 99/@r;
+            background-repeat: no-repeat;
+            background-size: 99/@r 99/@r;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .tag-hot{
+            background-image: url(../images/hot-tag.jpg);
+        }
+        .tag-popular{
+            background-image: url(../images/popular-tag.jpg);
+        }
+        .tag-recommend{
+            background-image: url(../images/recommend-tag.jpg);
+        }
+    }
+}
+.mid-show{
+    width: 100%;
+    height: 590/@r;
+    padding: 54/@r 42/@r 0;
+    background: #fff;
+    margin-top: 30/@r;
+    a{
+        display: block;
+        width: 100%;
+        height: 590/@r;
+        h4{
+            font-size: 44/@r;
+            color: #000;
+        }
+        p{
+            font-size: 36/@r;
+            color: #6e6e6e;
+            margin: 28/@r 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-right: 50/@r;
+        }
+        img{
+            width: 996/@r;
+            height: 357/@r;
+
+        }
+    }
+}
+.menu{
+    width: 100%;
+    height: 144/@r;
+    border-top: 1px solid #dddddd;
+    padding:  0 25/@r;
+    a{
+        float: left;
+        width: 25%;
+        height: 143/@r;
+        font-size: 28/@r;
+        color: #666;
+        text-align: center;
+        background: url(../images/);
+        padding-top: 100/@r;
+    }
+    .active{
+        color: #ff942b;
     }
 }
