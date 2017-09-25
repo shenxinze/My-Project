@@ -392,9 +392,64 @@ body{
     }
 }
 
-.raido{
+.radio{
     width: 100%;
-    height: ;
+    height: 720/@r;
+    background: url(../images/radio-bg.jpg) no-repeat;
+    background-size: 1080/@r 720/@r;
+    position: relative;
+    h5{
+        font-size: 34/@r;
+        color: #c3c1c7;
+        text-align: center;
+        padding-top: 520/@r;
+    }
+    .info{
+        width: 100%;
+        height: 120/@r;
+        border-top: 2px solid #555567;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        .wifi-icon{
+            float: left;
+            width: 149/@r;
+            height: 118/@r;
+            background: url(../images/wifi-icon.jpg) no-repeat;
+            background-size: 149/@r 118/@r;
+        }
+        .sup-share{
+            float: right!important;
+            height: 118/@r;
+             b{
+                display: inline-block;
+                vertical-align: top;
+            } 
+            .support{
+                display: inline-block;
+                vertical-align: top;
+                width: 142/@r;
+                height: 118/@r;
+                background: url(../images/radio-support.jpg) no-repeat;
+                background-size: 142/@r 118/@r;
+                position: relative;
+                i{
+                    font-size: 24/@r;
+                    color: #a6a6a6;
+                    position: absolute;
+                    right: 0;
+                    top: 28/@r;
+                }
+            }
+            .share{
+                width: 166/@r;
+                height: 118/@r;
+                background: url(../images/radio-share.jpg) no-repeat;
+                background-size: 166/@r 118/@r;
+            }
+        }
+    }
+
 }
 
 .refresh{
@@ -405,5 +460,18 @@ body{
         height: 515/@r;
         display: inline-block;
         vertical-align: top;
+    }
+}
+
+.menu{
+    width: 100%;
+    height: 150/@r;
+    display: flex;
+    justfify-content: space-center;
+    .btn{
+        width: 240/@r;
+        height: 150/@r;
+        background: red;
+
     }
 }

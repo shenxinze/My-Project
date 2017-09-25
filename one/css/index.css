@@ -376,9 +376,63 @@ body {
   text-align: right;
   margin-bottom: 2.9rem;
 }
-.raido {
+.radio {
   width: 100%;
-  height: ;
+  height: 36rem;
+  background: url(../images/radio-bg.jpg) no-repeat;
+  background-size: 54rem 36rem;
+  position: relative;
+}
+.radio h5 {
+  font-size: 1.7rem;
+  color: #c3c1c7;
+  text-align: center;
+  padding-top: 26rem;
+}
+.radio .info {
+  width: 100%;
+  height: 6rem;
+  border-top: 2px solid #555567;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.radio .info .wifi-icon {
+  float: left;
+  width: 7.45rem;
+  height: 5.9rem;
+  background: url(../images/wifi-icon.jpg) no-repeat;
+  background-size: 7.45rem 5.9rem;
+}
+.radio .info .sup-share {
+  float: right!important;
+  height: 5.9rem;
+}
+.radio .info .sup-share b {
+  display: inline-block;
+  vertical-align: top;
+}
+.radio .info .sup-share .support {
+  display: inline-block;
+  vertical-align: top;
+  width: 7.1rem;
+  height: 5.9rem;
+  background: url(../images/radio-support.jpg) no-repeat;
+  background-size: 7.1rem 5.9rem;
+  position: relative;
+}
+.radio .info .sup-share .support i {
+  font-size: 1.2rem;
+  color: #a6a6a6;
+  position: absolute;
+  right: 0;
+  top: 1.4rem;
+}
+.radio .info .sup-share .share {
+  width: 8.3rem;
+  height: 5.9rem;
+  background: url(../images/radio-share.jpg) no-repeat;
+  background-size: 8.3rem 5.9rem;
 }
 .refresh {
   width: 100%;
@@ -389,4 +443,15 @@ body {
   height: 25.75rem;
   display: inline-block;
   vertical-align: top;
+}
+.menu {
+  width: 100%;
+  height: 7.5rem;
+  display: flex;
+  justfify-content: space-center;
+}
+.menu .btn {
+  width: 12rem;
+  height: 7.5rem;
+  background: red;
 }
