@@ -734,3 +734,52 @@ body {
   width: 54rem;
   height: 5.25rem;
 }
+/*-------------------- ME --------------------*/
+.m-info {
+  width: 100%;
+  height: 53.9rem;
+  background: #333;
+}
+.m-info .bg {
+  width: 100%;
+  height: 53.9rem;
+}
+.m-info .top-small-btn {
+  width: 100%;
+  height: 2.85rem;
+  padding: 0 2.7rem 0 2.2rem;
+  margin-top: 2rem;
+}
+.m-info .top-small-btn a {
+  width: 2.85rem;
+  height: 2.85rem;
+}
+.m-info .top-small-btn a:nth-child(1) {
+  float: left;
+  background: url(../images/set.png) no-repeat;
+}
+.m-info .top-small-btn a:nth-child(2) {
+  float: right;
+  background: url(../images/email.png) no-repeat;
+}
+.m-info .my-icon {
+  width: 9.4rem;
+  height: ;
+}
+.m-info .my-icon dt {
+  width: 9.4rem;
+  height: 9.4rem;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  background: red;
+}
+.m-info .my-icon dt img {
+  width: 9.4rem;
+  height: 9.4rem;
+}
+.m-info .my-icon dd {
+  width: ;
+  height: ;
+  font-size: ;
+  color: ;
+}
