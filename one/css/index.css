@@ -54,7 +54,7 @@ body {
   display: block;
 }
 .top-show a img {
-  width: 54rem;
+  width: 100%;
   height: 36rem;
 }
 .top-show .title {
@@ -392,7 +392,7 @@ body {
   width: 100%;
   height: 36rem;
   background: url(../images/radio-bg.jpg) no-repeat;
-  background-size: 54rem 36rem;
+  background-size: 100% 36rem;
   position: relative;
 }
 .radio h5 {
@@ -451,7 +451,7 @@ body {
   height: 25.75rem;
 }
 .refresh img {
-  width: 54rem;
+  width: 100%;
   height: 25.75rem;
   display: inline-block;
   vertical-align: top;
@@ -494,7 +494,7 @@ body {
   display: block;
 }
 .a-banner li a img {
-  width: 54rem;
+  width: 100%;
   height: 32.25rem;
 }
 .a-banner .num {
@@ -731,14 +731,15 @@ body {
   height: 5.25rem;
 }
 .a-more img {
-  width: 54rem;
+  width: 100%;
   height: 5.25rem;
 }
 /*-------------------- ME --------------------*/
 .m-info {
   width: 100%;
   height: 53.9rem;
-  background: #333;
+  background: url(../images/img7.jpg) no-repeat;
+  background-size: 100% 53.9rem;
 }
 .m-info .bg {
   width: 100%;
@@ -764,7 +765,8 @@ body {
 }
 .m-info .my-icon {
   width: 9.4rem;
-  height: ;
+  height: 12.8rem;
+  margin: 0 auto;
 }
 .m-info .my-icon dt {
   width: 9.4rem;
@@ -778,8 +780,244 @@ body {
   height: 9.4rem;
 }
 .m-info .my-icon dd {
-  width: ;
+  width: 100%;
+  margin-top: 1.4rem;
+  font-size: 2.1rem;
+  color: #fff;
+  text-align: center;
+}
+.m-info .record {
+  width: 20.9rem;
+  height: 19.7rem;
+  background: #fff;
+  margin: 6.5rem auto 0;
+  border-radius: 0.5rem;
+}
+.m-info .record dl {
+  width: 20.9rem;
+  height: 19.7rem;
+  position: relative;
+}
+.m-info .record dl dt {
+  width: 100%;
+  height: 15.5rem;
+  padding: 0.3rem;
+}
+.m-info .record dl dt img {
+  width: 20.3rem;
+  height: 14.9rem;
+  border-radius: 0.5rem;
+}
+.m-info .record dl .desc {
+  height: 3.9rem;
+  font-size: 1.5rem;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 0.3rem;
+  background: url(../images/me-bg.jpg) repeat-x;
+  line-height: 3.9rem;
+  margin-top: 0.3rem;
+}
+.m-info .record dl .make {
+  width: 16.6rem;
+  height: 4.3rem;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.6);
+  font-size: 1.9rem;
+  color: #fff;
+  line-height: 4.3rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -2.1rem 0 0 -8.3rem;
+  padding-left: 6rem;
+}
+.m-info .record dl .make i {
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url(../images/pen.png) no-repeat;
+  background-size: 2.4rem 2.4rem;
+  position: absolute;
+  left: 2rem;
+  top: 1rem;
+  padding-right: 1rem;
+}
+.my-collect {
+  width: 100%;
+  height: 18.2rem;
+  background: #fff;
+  margin-top: 1.5rem;
+}
+.my-collect h2 {
+  font-size: 1.9rem;
+  color: #333;
+  padding-left: 3rem;
+  line-height: 4.6rem;
+}
+.my-collect .list {
+  width: 100%;
+  padding: 0 1.85rem;
+}
+.my-collect .list li {
+  float: left;
+  width: 20%;
+  height: 9.8rem;
+  text-align: center;
+  background: url(../images/my-clo-icon1.jpg) no-repeat 0.6rem top;
+}
+.my-collect .list li a {
+  width: 100%;
+  height: 9.8rem;
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #666666;
+  padding-top: 8.2rem;
+}
+.my-collect .list li:nth-child(2) {
+  background-image: url(../images/my-clo-icon2.jpg);
+}
+.my-collect .list li:nth-child(3) {
+  background-image: url(../images/my-clo-icon3.jpg);
+}
+.my-collect .list li:nth-child(4) {
+  background-image: url(../images/my-clo-icon4.jpg);
+}
+.my-collect .list li:nth-child(5) {
+  background-image: url(../images/my-clo-icon5.jpg);
+}
+.my-focus {
+  width: 100%;
+  height: 7.5rem;
+  background: #fff;
+  line-height: 7.5rem;
+  margin-top: 1.5rem;
+  padding: 0 3rem;
+}
+.my-focus a {
+  display: block;
+  width: 100%;
+  height: 7.5rem;
+}
+.my-focus span {
+  float: left;
+  font-size: 1.9rem;
+  color: #666666;
+  background: url(../images/my-focus.png) no-repeat left center;
+  background-size: 2.8rem 2.8rem;
+  padding-left: 5.3rem;
+}
+.my-focus b {
+  float: right;
+  font-size: 1.9rem;
+  color: #9b9b9b;
+  background: url(../images/arrow-r.png) no-repeat right 2.35rem;
+  padding-right: 2.3rem;
+}
+.my-music {
+  margin-bottom: 1.5rem;
+}
+.my-music a span {
+  background-image: url(../images/my-music.png);
+  background-size: 3rem 3rem;
+}
+/*-------------------- article --------------------*/
+.article-top {
+  width: 100%;
+  height: 6.85rem;
+  background: #fff;
+  border-bottom: 2px solid #e6e6e6;
+  position: relative;
+}
+.article-top .return {
+  width: 6.8rem;
+  height: 6.75rem;
+  float: left;
+  background: url(../images/return.jpg) no-repeat;
+  background-size: 6.8rem 6.75rem;
+}
+.article-top .title {
+  width: 100%;
+  height: 6.75rem;
+  padding: 0 7rem;
+  position: absolute;
+  font-size: 2.2rem;
+  color: #333333;
+  text-align: center;
+  line-height: 6.75rem;
+}
+.article-top .collect {
+  width: 6.5rem;
+  height: 6.5rem;
+  float: right;
+  background: url(../images/bookmark.jpg) no-repeat;
+  background-size: 6.5rem 6.5rem;
+}
+.article-cont {
+  width: 100%;
   height: ;
-  font-size: ;
-  color: ;
+  padding: 0 3rem;
+}
+.article-cont h2 {
+  font-size: 3.3rem;
+  color: #333333;
+  font-weight: bold;
+  line-height: 5.3rem;
+  margin: 4.3rem 0 6.3rem 0;
+}
+.article-cont .author {
+  width: 100%;
+  height: 3rem;
+  position: relative;
+}
+.article-cont .author h4 {
+  font-size: 1.6rem;
+  color: #333333;
+}
+.article-cont .author span {
+  width: 3rem;
+  height: 3rem;
+  background: url(../images/class.png) no-repeat;
+  background-size: 3rem 3rem;
+  position: absolute;
+  right: 0;
+  top: -0.7rem;
+}
+.article-cont .read {
+  width: 100%;
+  height: 6.9rem;
+  border: 3px solid #666666;
+  border-radius: 0.7rem;
+  background: url(../images/read.png) no-repeat left center;
+  background-size: 4.8rem 4.8rem;
+  position: relative;
+  margin-top: 4rem;
+}
+.article-cont .read h3 {
+  height: 6.6rem;
+  line-height: 6.6rem;
+  font-size: 2.1rem;
+  color: #333333;
+  padding-left: 5.2rem;
+}
+.article-cont .read span {
+  font-size: 2.1rem;
+  color: #333333;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin: -1.05rem 1.5rem 0 0;
+}
+.article-cont .content {
+  width: 100%;
+  margin-top: 4.3rem;
+}
+.article-cont .content p {
+  font-size: 2rem;
+  color: #333;
+  line-height: 4.8rem;
+  margin-bottom: 2.9rem;
 }

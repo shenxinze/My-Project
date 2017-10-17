@@ -1,0 +1,315 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  height: 100%;
+  overflow: auto;
+  font-family: arial, "Microsoft Yahei", sans-serif;
+  box-sizing: border-box;
+  background: #fff;
+}
+/*-------------------- article --------------------*/
+.article-top {
+  width: 100%;
+  height: 6.85rem;
+  background: #fff;
+  border-bottom: 2px solid #e6e6e6;
+  position: relative;
+}
+.article-top .return {
+  width: 6.8rem;
+  height: 6.75rem;
+  float: left;
+  background: url(../images/return.jpg) no-repeat;
+  background-size: 6.8rem 6.75rem;
+}
+.article-top .title {
+  width: 100%;
+  height: 6.75rem;
+  padding: 0 7rem;
+  position: absolute;
+  font-size: 2.2rem;
+  color: #333333;
+  text-align: center;
+  line-height: 6.75rem;
+}
+.article-top .collect {
+  width: 6.5rem;
+  height: 6.5rem;
+  float: right;
+  background: url(../images/bookmark.jpg) no-repeat;
+  background-size: 6.5rem 6.5rem;
+}
+.article-cont {
+  width: 100%;
+  height: ;
+  padding: 0 3rem;
+}
+.article-cont h2 {
+  font-size: 3.3rem;
+  color: #333333;
+  font-weight: bold;
+  line-height: 5.3rem;
+  margin: 4.3rem 0 6.3rem 0;
+}
+.article-cont .author {
+  width: 100%;
+  height: 3rem;
+  position: relative;
+}
+.article-cont .author h4 {
+  font-size: 1.6rem;
+  color: #333333;
+}
+.article-cont .author span {
+  width: 3rem;
+  height: 3rem;
+  background: url(../images/class.png) no-repeat;
+  background-size: 3rem 3rem;
+  position: absolute;
+  right: 0;
+  top: -0.7rem;
+}
+.article-cont .read {
+  width: 100%;
+  height: 6.9rem;
+  border: 0.15rem solid #666666;
+  border-radius: 0.7rem;
+  background: url(../images/read.png) no-repeat left center;
+  background-size: 4.8rem 4.8rem;
+  position: relative;
+  margin-top: 4rem;
+}
+.article-cont .read h3 {
+  height: 6.6rem;
+  line-height: 6.6rem;
+  font-size: 2.1rem;
+  color: #333333;
+  padding-left: 5.2rem;
+}
+.article-cont .read span {
+  font-size: 2.1rem;
+  color: #333333;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin: -1.05rem 1.5rem 0 0;
+}
+.article-cont .content {
+  width: 100%;
+  margin-top: 4.3rem;
+}
+.article-cont .content p {
+  font-size: 2rem;
+  color: #333;
+  line-height: 4.8rem;
+  margin-bottom: 2.9rem;
+}
+.article-cont .content .edit {
+  font-size: 1.6rem;
+  color: #808080;
+  line-height: 1;
+}
+.article-cont .author-info {
+  width: 100%;
+  position: relative;
+}
+.article-cont .author-info h4 {
+  width: 9rem;
+  padding-bottom: 2.1rem;
+  border-bottom: 0.6rem solid #000000;
+  font-size: 1.8rem;
+  color: #333;
+}
+.article-cont .author-info dl {
+  width: 100%;
+  height: 6rem;
+  margin-top: 3.1rem;
+}
+.article-cont .author-info dl dt {
+  float: left;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background: red;
+}
+.article-cont .author-info dl dt img {
+  width: 6rem;
+  height: 6rem;
+}
+.article-cont .author-info dl dd {
+  float: left;
+  padding-left: 2rem;
+}
+.article-cont .author-info dl dd p {
+  font-size: 1.8rem;
+  color: #333333;
+}
+.article-cont .author-info dl dd p:nth-child(1) {
+  padding: 0.4rem 0 1.5rem 0;
+}
+.article-cont .author-info dl dd p:nth-child(2) {
+  color: #808080;
+}
+.article-cont .author-info a {
+  width: 6.9rem;
+  height: 4.8rem;
+  border: 0.15rem solid #b3b3b3;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  color: #808080;
+  text-align: center;
+  line-height: 4.5rem;
+  position: absolute;
+  right: 0;
+  top: 8rem;
+}
+.discuss-cont {
+  width: 100%;
+  padding: 0 3rem;
+  margin-top: 8.2rem;
+}
+.discuss-cont h4 {
+  width: 9rem;
+  padding-bottom: 2.1rem;
+  border-bottom: 0.6rem solid #000000;
+  font-size: 1.8rem;
+  color: #333;
+}
+.discuss-cont dl {
+  width: 100%;
+  height: 3rem;
+  margin-top: 3.7rem;
+  position: relative;
+}
+.discuss-cont dl dt {
+  width: 3rem;
+  height: 3rem;
+  background: red;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+}
+.discuss-cont dl dt img {
+  width: 3rem;
+  height: 3rem;
+}
+.discuss-cont dl dd {
+  float: left;
+  height: 3rem;
+}
+.discuss-cont dl dd h5 {
+  font-size: 1.8rem;
+  color: #979797;
+  line-height: 3rem;
+  margin-left: 1.4rem;
+}
+.discuss-cont dl dd span {
+  position: absolute;
+  right: 0;
+  top: 0.85rem;
+  font-size: 1.3rem;
+  color: #808080;
+}
+.discuss-cont p {
+  font-size: 1.8rem;
+  color: #333333;
+  line-height: 3.6rem;
+  margin-top: 2rem;
+}
+.discuss-cont .react {
+  width: 45rem;
+  height: 8.4rem;
+  padding: 0.5rem 3rem 0 1.5rem;
+  border: 0.15rem solid #eaeaea;
+  margin: 2rem auto 0;
+}
+.discuss-cont .data-info {
+  width: 100%;
+  height: 6.3rem;
+  border-bottom: 0.15rem solid #eaeaea;
+  margin-top: 1rem;
+}
+.discuss-cont .data-info a {
+  float: left;
+  font-size: 1.5rem;
+  color: #979797;
+  line-height: 6.15rem;
+  margin-left: 3.1rem;
+}
+.discuss-cont .data-info .info {
+  float: right;
+  margin-right: 6.3rem;
+}
+.discuss-cont .data-info .info span {
+  float: left;
+  width: 5.5rem;
+  height: 6.15rem;
+  position: relative;
+}
+.discuss-cont .data-info .info span i {
+  position: absolute;
+  font-size: 1.3rem;
+  color: #666666;
+  right: -0.3rem;
+  top: 2.1rem;
+}
+.discuss-cont .data-info .info span:nth-child(1) {
+  background: url(../images/discuss-icon.jpg) no-repeat;
+  background-size: 5.5rem 6.15rem;
+}
+.discuss-cont .data-info .info span:nth-child(2) {
+  background: url(../images/discuss-icon-support.jpg) no-repeat;
+  background-size: 5.5rem 6.15rem;
+}
+.discuss-bottom {
+  width: 100%;
+  height: 7.6rem;
+  border-top: 2px solid #e2e2e2;
+  padding-left: 3rem;
+  background: #fbfbfb;
+}
+.discuss-bottom input {
+  float: left;
+  width: 21rem;
+  height: 5.1rem;
+  border: 0.15rem solid #a6a6a6;
+  border-radius: 0.7rem;
+  font-size: 1.9rem;
+  color: #a6a6a6;
+  text-indent: 1.9rem;
+  margin-top: 1.2rem;
+}
+.discuss-bottom .info {
+  float: right;
+}
+.discuss-bottom .info span {
+  float: left;
+  height: 7.5rem;
+  position: relative;
+}
+.discuss-bottom .info span i {
+  font-size: 1.2rem;
+  color: #a6a6a6;
+  position: absolute;
+  right: 0.5rem;
+  top: 2.3rem;
+}
+.discuss-bottom .info .like {
+  width: 9.3rem;
+  background: url(../images/article-like.jpg) no-repeat;
+  background-size: 9.3rem 7.5rem;
+}
+.discuss-bottom .info .discuss-num {
+  width: 8.8rem;
+  background: url(../images/article-discuss.jpg) no-repeat;
+  background-size: 8.8rem 7.5rem;
+}
+.discuss-bottom .info .share {
+  width: 7.3rem;
+  background: url(../images/article-share.jpg) no-repeat;
+  background-size: 7.3rem 7.5rem;
+  margin-left: 1rem;
+}

@@ -55,7 +55,7 @@ body{
     a{
         display: block;
         img{
-            width: 1080/@r;
+            width: 100%;
             height: 720/@r;
         }
     }
@@ -407,7 +407,7 @@ body{
     width: 100%;
     height: 720/@r;
     background: url(../images/radio-bg.jpg) no-repeat;
-    background-size: 1080/@r 720/@r;
+    background-size: 100% 720/@r;
     position: relative;
     h5{
         font-size: 34/@r;
@@ -467,7 +467,7 @@ body{
     width: 100%;
     height: 515/@r;
     img{
-        width: 1080/@r;
+        width: 100%;
         height: 515/@r;
         display: inline-block;
         vertical-align: top;
@@ -510,7 +510,7 @@ body{
         a{
             display: block;
             img{
-                width: 1080/@r;
+                width: 100%;
                 height: 645/@r;
             }
         }
@@ -755,7 +755,7 @@ body{
     width: 100%;
     height: 105/@r;
     img{
-        width: 1080/@r;
+        width: 100%;
         height: 105/@r;
     }
 }
@@ -764,7 +764,8 @@ body{
 .m-info{
     width: 100%;
     height: 1078/@r;
-    background: #333;
+    background: url(../images/img7.jpg) no-repeat;
+    background-size: 100% 1078/@r;
     .bg{
         width: 100%;
         height: 1078/@r;
@@ -790,7 +791,8 @@ body{
     }
     .my-icon{
         width: 188/@r;
-        height: ;
+        height: 256/@r;
+        margin: 0 auto;
         dt{
             width: 188/@r;
             height: 188/@r;
@@ -803,10 +805,253 @@ body{
             }
         }
         dd{
-            width: ;
-            height: ;
-            font-size: ;
-            color: ;
+            width: 100%;
+            margin-top: 28/@r;
+            font-size: 42/@r;
+            color: #fff;
+            text-align: center;
+        }
+    }
+    .record{
+        width: 418/@r;
+        height: 394/@r;
+        background: #fff;
+        margin: 130/@r auto 0;
+        border-radius: 10/@r;
+        dl{
+            width: 418/@r;
+            height: 394/@r;
+            position: relative;
+            dt{
+                width: 100%;
+                height: 310/@r;
+                padding: 6/@r;
+                img{
+                    width: 406/@r;
+                    height: 298/@r;
+                    border-radius: 10/@r;
+                }
+            }
+            .desc{
+                height: 78/@r;
+                font-size: 30/@r;
+                color: #333;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                padding: 0 6/@r;
+                background: url(../images/me-bg.jpg) repeat-x;
+                line-height: 78/@r;
+                margin-top: 6/@r;
+            }
+            .make{
+                width: 332/@r;
+                height: 86/@r;
+                background: rgba(0,0,0,0.4);
+                border: 1px solid #fff;
+                border-radius: 10/@r;
+                box-shadow: 0 0 4/@r rgba(0,0,0,0.6);
+                font-size: 38/@r;
+                color: #fff;
+                line-height: 86/@r;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin: -42/@r 0 0 -166/@r;
+                padding-left: 120/@r;
+                i{
+                    
+                    width: 48/@r;
+                    height: 48/@r;
+                    background: url(../images/pen.png) no-repeat;
+                    background-size: 48/@r 48/@r;
+                    position: absolute;
+                    left: 40/@r;
+                    top: 20/@r;
+                    padding-right: 20/@r;
+                }
+            }
+        }
+    }
+}
+
+.my-collect{
+    width: 100%;
+    height: 364/@r;
+    background: #fff;
+    margin-top: 30/@r;
+    h2{
+        font-size: 38/@r;
+        color: #333;
+        padding-left: 60/@r;
+        line-height: 92/@r;
+    }
+    .list{
+        width: 100%;
+        padding: 0 37/@r;
+        li{
+            float: left;
+            width: 20%;
+            height: 196/@r;
+            text-align: center;
+            background: url(../images/my-clo-icon1.jpg) no-repeat 12/@r top;
+            a{
+                width: 100%;
+                height: 196/@r;
+                display: inline-block;
+                font-size: 32/@r;
+                color: #666666;
+                padding-top: 164/@r;
+            }
+        }
+        li:nth-child(2){
+            background-image: url(../images/my-clo-icon2.jpg);
+        }
+        li:nth-child(3){
+            background-image: url(../images/my-clo-icon3.jpg);
+        }
+        li:nth-child(4){
+            background-image: url(../images/my-clo-icon4.jpg);
+        }
+        li:nth-child(5){
+            background-image: url(../images/my-clo-icon5.jpg);
+        }
+    }
+}
+
+.my-focus{
+    width: 100%;
+    height: 150/@r;
+    background: #fff;
+    line-height: 150/@r;
+    margin-top: 30/@r;
+    padding: 0 60/@r;
+    a{
+        display: block;
+        width: 100%;
+        height: 150/@r;
+    }
+    span{
+        float: left;
+        font-size: 38/@r;
+        color: #666666;
+        background: url(../images/my-focus.png) no-repeat left center;
+        background-size: 56/@r 56/@r;
+        padding-left: 106/@r;
+    }
+    b{
+        float: right;
+        font-size: 38/@r;
+        color: #9b9b9b;
+        background: url(../images/arrow-r.png) no-repeat right 47/@r;
+        padding-right: 46/@r;
+    }
+}
+.my-music{
+    margin-bottom: 30/@r;
+    a{
+        span{
+            background-image: url(../images/my-music.png);
+            background-size: 60/@r 60/@r;
+        }
+    }
+}
+
+/*-------------------- article --------------------*/
+.article-top{
+    width: 100%;
+    height: 137/@r;
+    background: #fff;
+    border-bottom: 2px solid #e6e6e6;
+    position: relative;
+    .return{
+        width: 136/@r;
+        height: 135/@r;
+        float: left;
+        background: url(../images/return.jpg) no-repeat;
+        background-size: 136/@r 135/@r;
+    }
+    .title{
+        width: 100%;
+        height: 135/@r;
+        padding: 0 140/@r;
+        position: absolute;
+        font-size: 44/@r;
+        color: #333333;
+        text-align: center;
+        line-height: 135/@r;
+    }
+    .collect{
+        width: 130/@r;
+        height: 130/@r;
+        float: right;
+        background: url(../images/bookmark.jpg) no-repeat;
+        background-size: 130/@r 130/@r;
+    }
+}
+
+.article-cont{
+    width: 100%;
+    height: ;
+    padding: 0 60/@r;
+    h2{
+        font-size: 66/@r;
+        color: #333333;
+        font-weight: bold;
+        line-height: 106/@r;
+        margin: 86/@r 0 126/@r 0;
+    }
+    .author{
+        width: 100%;
+        height: 60/@r;
+        position: relative;
+        h4{
+            font-size: 32/@r;
+            color: #333333;
+        }
+        span{
+            width: 60/@r;
+            height: 60/@r;
+            background: url(../images/class.png) no-repeat;
+            background-size: 60/@r 60/@r;
+            position: absolute;
+            right: 0;
+            top: -14/@r;
+        }
+    }
+    .read{
+        width: 100%;
+        height: 138/@r;
+        border: 3px solid #666666;
+        border-radius: 14/@r;
+        background: url(../images/read.png) no-repeat left center;
+        background-size: 96/@r 96/@r;
+        position: relative;
+        margin-top: 80/@r;
+        h3{
+            height: 132/@r;
+            line-height: 132/@r;
+            font-size: 42/@r;
+            color: #333333;
+            padding-left: 104/@r;
+        }
+        span{
+            font-size: 42/@r;
+            color: #333333;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin: -21/@r 30/@r 0 0;
+        }
+    }
+    .content{
+        width: 100%;
+        margin-top: 86/@r;
+        p{
+            font-size: 40/@r;
+            color: #333;
+            line-height: 96/@r;
+            margin-bottom: 58/@r;
         }
     }
 }
