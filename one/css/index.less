@@ -8,7 +8,7 @@ body{
     overflow: auto;
     font-family: arial,"Microsoft Yahei",sans-serif;
     box-sizing: border-box;
-    background: #eeeeee;
+    -background: #eeeeee;
 }
 
 .header{
@@ -52,11 +52,11 @@ body{
 .top-show{
     width: 100%;
     background: #fff;
+    padding-top: 144/@r;
     a{
         display: block;
         img{
             width: 100%;
-            height: 720/@r;
         }
     }
     .title{
@@ -84,6 +84,7 @@ body{
         font-size: 32/@r;
         color: #8b8b8b;
         text-align: center;
+        margin-top: 24/@r;
     }
     .info{
         height: 120/@r;
@@ -140,7 +141,6 @@ body{
 
 .column-info{
     width: 100%;
-    height: 120/@r;
     background: #fff;
     text-align: center;
     margin: 15/@r 0;
@@ -157,6 +157,49 @@ body{
         background: url(../images/arrow-b.jpg) no-repeat right center;
         background-size: 28/@r 16/@r;
         margin: 54/@r 0 0 14/@r;
+    }
+    .list{
+        width: 100%;
+        padding: 20/@r 0 30/@r;
+        text-align: left;
+        li{
+            width: 100%;
+            height: 120/@r;
+            background: blue;
+            margin-bottom: 30/@r;
+            a{
+                width: 100%;
+                height: 120/@r;
+                background: #fff;
+                display: block;
+                padding: 0 90/@r 0 70/@r;
+                dl{
+                    width: 100%;
+                    dt{
+                        width: 31/@r;
+                        height: 120/@r;
+                        background: url(../images/arrow-r.png) no-repeat left center;
+                        background-size: 31/@r 56/@r;
+                        float: left;
+                        margin-right: 36/@r;
+                    }
+                    dd{
+                       color: #333333; 
+                       h4{
+                            font-size: 32/@r;
+                            line-height: 64/@r;
+                        }
+                       p{
+                            font-size: 38/@r;
+                            line-height: 76/@r;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -188,7 +231,7 @@ body{
             padding: 46/@r 0 40/@r 0;
         }
         img{
-            width: 960/@r;
+            width: 100%;
             height: 573/@r;
         }
         .desc{
@@ -252,7 +295,7 @@ body{
     padding: 52/@r 100/@r;
     position: relative;
     img{
-        width: 880/@r;
+        width: 100%;
         height: 1317/@r;
     }
     span{
@@ -292,7 +335,7 @@ body{
                 width: 480/@r;
                 height: 2/@r;
                 background: url(../images/music-line.jpg) no-repeat;
-                background-size: 480/@r 2/@r;
+                background-size: 100% 2/@r;
                 position: absolute;
                 left: 0;
             }
@@ -351,12 +394,14 @@ body{
             font-size: 38/@r;
             color: #808080;
             margin-bottom: 68/@r;
+            line-height: 80/@r;
         }
     }
 }
 
 .movie{
     a{
+        width: 100%;
         text-align: center;
         .author{
             text-align: left;
@@ -367,11 +412,11 @@ body{
             position: relative;
             padding-top: 45/@r; 
             img{
-                width: 960/@r;
+                width: 100%;
                 height: 510/@r;
             }
             .line{
-                width: 960/@r;
+                width: 100%;
                 height: 30/@r;
                 background: url(../images/moveie-bg.png) repeat-x;
                 background-size: 50/@r 30/@r;
@@ -394,7 +439,7 @@ body{
         .movie-desc{
             text-align: left;
             margin-top: 42/@r;
-            
+            line-height: 80/@r;
         }
         .movie-src{
             text-align: right;
@@ -504,14 +549,17 @@ body{
     width: 100%;
     height: 645/@r;
     position: relative;
+    padding-top: 144/@r;
     li{
+        width: 100%;
         height: 645/@r;
         float: left;
-        a{
+        a{  
+            width: 100%;
             display: block;
             img{
                 width: 100%;
-                height: 645/@r;
+               
             }
         }
     }
@@ -970,6 +1018,9 @@ body{
         float: left;
         background: url(../images/return.jpg) no-repeat;
         background-size: 136/@r 135/@r;
+        position: absolute;
+        left: 0;
+        top: 0;
     }
     .title{
         width: 100%;
@@ -1053,5 +1104,32 @@ body{
             line-height: 96/@r;
             margin-bottom: 58/@r;
         }
+    }
+}
+
+.vux-popup-dialog.vux-popup-right {
+    background: rgba(0,0,0,0.8);
+}
+.img_box{
+    width: 100%;
+    padding: 260/@r 60/@r 0;
+    h5,span{
+        font-size: 32/@r;
+        color: #fff;
+        line-height: 100/@r;
+    }
+    .box{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    i{
+        display: inline-block;
+        vertical-align: middle;
+        width: 2px;
+        height: 1.6rem;
+        background: #fff;
+        margin: 0 0.7rem;
     }
 }

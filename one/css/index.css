@@ -7,7 +7,7 @@ body {
   overflow: auto;
   font-family: arial, "Microsoft Yahei", sans-serif;
   box-sizing: border-box;
-  background: #eeeeee;
+  -background: #eeeeee;
 }
 .header {
   width: 100%;
@@ -49,13 +49,13 @@ body {
 .top-show {
   width: 100%;
   background: #fff;
+  padding-top: 7.2rem;
 }
 .top-show a {
   display: block;
 }
 .top-show a img {
   width: 100%;
-  height: 36rem;
 }
 .top-show .title {
   font-size: 1.6rem;
@@ -82,6 +82,7 @@ body {
   font-size: 1.6rem;
   color: #8b8b8b;
   text-align: center;
+  margin-top: 1.2rem;
 }
 .top-show .info {
   height: 6rem;
@@ -136,7 +137,6 @@ body {
 }
 .column-info {
   width: 100%;
-  height: 6rem;
   background: #fff;
   text-align: center;
   margin: 0.75rem 0;
@@ -154,6 +154,49 @@ body {
   background: url(../images/arrow-b.jpg) no-repeat right center;
   background-size: 1.4rem 0.8rem;
   margin: 2.7rem 0 0 0.7rem;
+}
+.column-info .list {
+  width: 100%;
+  padding: 1rem 0 1.5rem;
+  text-align: left;
+}
+.column-info .list li {
+  width: 100%;
+  height: 6rem;
+  background: blue;
+  margin-bottom: 1.5rem;
+}
+.column-info .list li a {
+  width: 100%;
+  height: 6rem;
+  background: #fff;
+  display: block;
+  padding: 0 4.5rem 0 3.5rem;
+}
+.column-info .list li a dl {
+  width: 100%;
+}
+.column-info .list li a dl dt {
+  width: 1.55rem;
+  height: 6rem;
+  background: url(../images/arrow-r.png) no-repeat left center;
+  background-size: 1.55rem 2.8rem;
+  float: left;
+  margin-right: 1.8rem;
+}
+.column-info .list li a dl dd {
+  color: #333333;
+}
+.column-info .list li a dl dd h4 {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+}
+.column-info .list li a dl dd p {
+  font-size: 1.9rem;
+  line-height: 3.8rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .column {
   width: 100%;
@@ -185,7 +228,7 @@ body {
   padding: 2.3rem 0 2rem 0;
 }
 .column a img {
-  width: 48rem;
+  width: 100%;
   height: 28.65rem;
 }
 .column a .desc {
@@ -247,7 +290,7 @@ body {
   position: relative;
 }
 .ad img {
-  width: 44rem;
+  width: 100%;
   height: 65.85rem;
 }
 .ad span {
@@ -285,7 +328,7 @@ body {
   width: 24rem;
   height: 0.1rem;
   background: url(../images/music-line.jpg) no-repeat;
-  background-size: 24rem 0.1rem;
+  background-size: 100% 0.1rem;
   position: absolute;
   left: 0;
 }
@@ -343,8 +386,10 @@ body {
   font-size: 1.9rem;
   color: #808080;
   margin-bottom: 3.4rem;
+  line-height: 4rem;
 }
 .movie a {
+  width: 100%;
   text-align: center;
 }
 .movie a .author {
@@ -357,11 +402,11 @@ body {
   padding-top: 2.25rem;
 }
 .movie a i img {
-  width: 48rem;
+  width: 100%;
   height: 25.5rem;
 }
 .movie a i .line {
-  width: 48rem;
+  width: 100%;
   height: 1.5rem;
   background: url(../images/moveie-bg.png) repeat-x;
   background-size: 2.5rem 1.5rem;
@@ -383,6 +428,7 @@ body {
 .movie a .movie-desc {
   text-align: left;
   margin-top: 2.1rem;
+  line-height: 4rem;
 }
 .movie a .movie-src {
   text-align: right;
@@ -485,17 +531,19 @@ body {
   width: 100%;
   height: 32.25rem;
   position: relative;
+  padding-top: 7.2rem;
 }
 .a-banner li {
+  width: 100%;
   height: 32.25rem;
   float: left;
 }
 .a-banner li a {
+  width: 100%;
   display: block;
 }
 .a-banner li a img {
   width: 100%;
-  height: 32.25rem;
 }
 .a-banner .num {
   height: 1.1rem;
@@ -938,6 +986,9 @@ body {
   float: left;
   background: url(../images/return.jpg) no-repeat;
   background-size: 6.8rem 6.75rem;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .article-top .title {
   width: 100%;
@@ -1020,4 +1071,31 @@ body {
   color: #333;
   line-height: 4.8rem;
   margin-bottom: 2.9rem;
+}
+.vux-popup-dialog.vux-popup-right {
+  background: rgba(0, 0, 0, 0.8);
+}
+.img_box {
+  width: 100%;
+  padding: 13rem 3rem 0;
+}
+.img_box h5,
+.img_box span {
+  font-size: 1.6rem;
+  color: #fff;
+  line-height: 5rem;
+}
+.img_box .box {
+  width: 100%;
+}
+.img_box .box img {
+  width: 100%;
+}
+.img_box i {
+  display: inline-block;
+  vertical-align: middle;
+  width: 2px;
+  height: 1.6rem;
+  background: #fff;
+  margin: 0 0.7rem;
 }
